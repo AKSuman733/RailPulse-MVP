@@ -41,6 +41,7 @@ const simulateBankPayment = (bank) => {
 
     const startTime = Date.now();
 
+    
     setTimeout(() => {
       const latency = Date.now() - startTime;
 
