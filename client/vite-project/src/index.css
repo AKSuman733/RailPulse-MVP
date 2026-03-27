@@ -1,0 +1,56 @@
+:root {
+  --bg-900: #07111a;
+  --bg-850: #0b1722;
+  --surface-900: rgba(10, 20, 31, 0.94);
+  --surface-800: rgba(14, 27, 39, 0.96);
+  --surface-soft: rgba(255, 255, 255, 0.04);
+  --surface-border: rgba(129, 196, 224, 0.14);
+  --surface-border-strong: rgba(103, 214, 182, 0.22);
+  --text-strong: #eef7fb;
+  --text-base: #d7e3ea;
+  --text-muted: #8ea4b2;
+  --text-dim: #6f8593;
+  --brand-primary: #52d6a7;
+  --brand-primary-strong: #1ea97e;
+  --brand-glow: rgba(82, 214, 167, 0.18);
+  --brand-secondary: #63c7f5;
+  --warning: #f4bc4f;
+  --danger: #f06a6a;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at top left, rgba(99, 199, 245, 0.18), transparent 24%),
+    radial-gradient(circle at top right, rgba(82, 214, 167, 0.1), transparent 18%),
+    linear-gradient(180deg, var(--bg-900) 0%, var(--bg-850) 55%, #081018 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}

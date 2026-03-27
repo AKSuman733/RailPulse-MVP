@@ -1,0 +1,380 @@
+.fintech-page {
+  position: relative;
+  color: var(--text-strong);
+}
+
+.dashboard-topline,
+.dashboard-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.dashboard-topline {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-kicker {
+  margin: 0 0 10px;
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+}
+
+.dashboard-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.dashboard-refresh-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: rgba(99, 199, 245, 0.05);
+  border: 1px solid var(--surface-border);
+  color: var(--text-base);
+}
+
+.uptime-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  box-shadow: 0 0 0 6px var(--brand-glow);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.panel {
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, var(--surface-900), var(--surface-800));
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.kpi-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 148px;
+  padding: 22px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(129, 196, 224, 0.1);
+}
+
+.panel-label {
+  margin: 0;
+  color: var(--text-base);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+}
+
+.panel-subtext {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.kpi-value {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.healthy {
+  color: var(--brand-primary);
+}
+
+.degraded {
+  color: var(--warning);
+}
+
+.critical {
+  color: var(--danger);
+}
+
+.panel-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.panel-heading h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--text-strong);
+}
+
+.panel-heading p {
+  margin: 0;
+  color: var(--text-dim);
+}
+
+.chart-wrap {
+  width: 100%;
+  min-height: 260px;
+}
+
+.legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-base);
+}
+
+.legend-item i {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.donut-wrap {
+  padding-top: 8px;
+}
+
+.latency-list,
+.score-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.latency-row,
+.score-row {
+  display: grid;
+  align-items: center;
+  gap: 14px;
+}
+
+.latency-row {
+  grid-template-columns: 1.1fr 1.8fr auto;
+}
+
+.latency-bar,
+.score-track,
+.mini-track {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.latency-bar-fill,
+.score-track-fill,
+.mini-track-fill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.latency-bar-fill.healthy,
+.mini-track-fill.healthy {
+  background: linear-gradient(90deg, #25886b, var(--brand-primary));
+}
+
+.latency-bar-fill.degraded,
+.mini-track-fill.degraded {
+  background: linear-gradient(90deg, #d8961b, var(--warning));
+}
+
+.latency-bar-fill.critical,
+.mini-track-fill.critical {
+  background: linear-gradient(90deg, #d05656, var(--danger));
+}
+
+.score-row {
+  grid-template-columns: minmax(110px, 1fr) minmax(180px, 1.7fr) 66px 74px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.score-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.score-bank,
+.score-status {
+  margin: 0;
+}
+
+.score-bank {
+  font-size: 1.02rem;
+}
+
+.score-status {
+  margin-top: 4px;
+  font-size: 0.84rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.score-meta {
+  color: #d4cfdf;
+  text-align: right;
+}
+
+.panel-footnote {
+  margin: 18px 0 0;
+  color: #8c879d;
+  font-size: 0.94rem;
+}
+
+.notice {
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #cbc7d8;
+}
+
+.notice.warning {
+  margin-bottom: 16px;
+  color: #ff9c9c;
+  background: rgba(235, 87, 87, 0.08);
+}
+
+.bank-table {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bank-table-header,
+.bank-table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 140px 1.2fr 1.2fr 110px 120px;
+  gap: 16px;
+  align-items: center;
+}
+
+.bank-table-header {
+  padding: 0 10px;
+  color: #a8a4b8;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.bank-table-row {
+  padding: 16px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bank-name {
+  font-size: 1rem;
+}
+
+.score-badge {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.metric-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.success-text {
+  color: #6ae0af;
+}
+
+.pending-text {
+  color: #ffc65d;
+}
+
+.latency-text {
+  font-weight: 500;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 108px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bank-table-header {
+    display: none;
+  }
+
+  .bank-table-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .dashboard-topline {
+    align-items: flex-start;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+
+  .latency-row,
+  .score-row,
+  .bank-table-row {
+    grid-template-columns: 1fr;
+  }
+}
