@@ -12,29 +12,40 @@ It provides insights into system health, performance metrics, and failure analys
 📊 Real-time Dashboard
 Visual representation of system health
 Success vs Failure metrics
+
 🏦 Multi-Entity Monitoring
 Track performance across different nodes (stations/banks equivalent)
+
 ⚡ Performance Analytics
 Response time tracking
 Failure rate monitoring
 Pending operations analysis
+
 📈 Interactive Charts
 Bar charts, gauges, and comparisons
 Clean and modern UI
+
 🧠 Smart Insights (MVP Level)
 Detect system bottlenecks
 Highlight low-performing entities
+
+
 🛠️ Tech Stack
+
 Frontend-
 React.js
 Vite
 Chart Libraries (Recharts / Chart.js)
+
 Backend-
 Node.js
 Express.js
 Database
 MongoDB
+
+
 📂 Project Structure
+
 RailPulse-MVP/
 │
 ├── client/        # Frontend (React)
@@ -42,8 +53,10 @@ RailPulse-MVP/
 └── README.md
 
 ⚙️ Installation & Setup
+
 1️⃣ Clone the repository
 git clone https://github.com/AKSuman733/RailPulse-MVP.git
+
 2️⃣ Install dependencies
 Backend
 cd server
@@ -51,14 +64,17 @@ npm install
 Frontend
 cd client
 npm install
+
 3️⃣ Run the project
 Start Backend
 npm start
 Start Frontend
 npm run dev
+
 📸 Screenshots
 
 Add your dashboard screenshots here 
+
 
 🚀 Future Improvements
 🔐 Authentication system (JWT)
