@@ -34,66 +34,73 @@ Highlight low-performing entities
 
 🛠️ Tech Stack
 
-Frontend-
-
-React.js
-
-Vite
-
-Chart Libraries (Recharts / Chart.js)
+Frontend-React.js,Vite,Chart Libraries (Recharts / Chart.js)
 
 Backend-
-Node.js
-Express.js
-Database
+Node.js,
+Express.js,
+
+Database-
 MongoDB
 
-
-📂 Project Structure
-
-RailPulse-MVP/
-
-│
-
-├── client/        # Frontend (React)
-├── server/        # Backend (Node + Express)  + DB- configs / models
-└── README.md
 
 ⚙️ Installation & Setup
 
 1️⃣ Clone the repository
 git clone https://github.com/AKSuman733/RailPulse-MVP.git
 
+
 2️⃣ Install dependencies
+
 Backend
+
 cd server
+
 npm install
+
 Frontend
+
 cd client
+
 npm install
+
 
 3️⃣ Run the project
 Start Backend
+
 npm start
+
 Start Frontend
+
 npm run dev
+
+
 
 📸 Screenshots
 
-Add your dashboard screenshots here 
+<img width="1200" height="750" alt="railpulse image" src="https://github.com/user-attachments/assets/bba2ea37-ee50-4bc2-bf29-81eb8c6f6dfa" />
 
 
-🚀 Future Improvements
-🔐 Authentication system (JWT)
-📡 Real-time updates using WebSockets
-🤖 AI-based anomaly detection
+
+
+🚀 Future Improvements   
+
+🔐 Authentication system (JWT)   
+
+📡 Real-time updates using WebSockets  
+
+🤖 AI-based anomaly detection  
+
 📊 Advanced analytics dashboard
+
 ☁️ Deployment (AWS / Vercel)
+
 
 
 This project demonstrates:
 
 Full-stack development (MERN)
+
 Real-world system design thinking
 Data visualization skills
 Scalable architecture concepts
@@ -108,7 +115,9 @@ If you like this project:
 
 ⭐ Star the repo
 🍴 Fork it
+
 📢 Share it
+
 📬 Contact
 
 Feel free to connect for collaboration or opportunities!
