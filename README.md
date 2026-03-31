@@ -35,8 +35,11 @@ Highlight low-performing entities
 🛠️ Tech Stack
 
 Frontend-
+
 React.js
+
 Vite
+
 Chart Libraries (Recharts / Chart.js)
 
 Backend-
@@ -49,7 +52,9 @@ MongoDB
 📂 Project Structure
 
 RailPulse-MVP/
+
 │
+
 ├── client/        # Frontend (React)
 ├── server/        # Backend (Node + Express)  + DB- configs / models
 └── README.md
