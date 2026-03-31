@@ -39,7 +39,10 @@ export default function Dashboard() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/metrics");
+      const BASE_URL = import.meta.env.VITE_API_URL;
+
+      const res = await axios.get(`${BASE_URL}/api/metrics`);
+      //const res = await axios.get("http://localhost:5000/api/metrics");
       setData(Array.isArray(res.data) ? res.data : []);
       setError("");
     } catch (err) {

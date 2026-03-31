@@ -22,7 +22,7 @@ app.use("/api", paymentRoutes);
 import metricsRoutes from "./routes/metricsRoutes.js";
 app.use("/api", metricsRoutes);
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on port ${process.env.PORT}`);
 });
