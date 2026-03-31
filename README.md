@@ -7,6 +7,7 @@ A real-time Railway Monitoring & Analytics Dashboard that tracks system performa
 RailPulse is designed to simulate an intelligent monitoring system for railway operations.
 It provides insights into system health, performance metrics, and failure analysis using interactive dashboards.
 
+
 🎯 Key Features
 
 📊 Real-time Dashboard
@@ -28,6 +29,7 @@ Clean and modern UI
 🧠 Smart Insights (MVP Level)
 Detect system bottlenecks
 Highlight low-performing entities
+
 
 
 🛠️ Tech Stack
